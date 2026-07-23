@@ -1,0 +1,11 @@
+# nunca versionar: contém senha SMTP real em texto plano
+OLD_2024/
+
+# o site novo entra no próximo commit, na raiz
+v2/
+marca/
+
+# lixo de SO
+Thumbs.db
+desktop.ini
+.DS_Store
