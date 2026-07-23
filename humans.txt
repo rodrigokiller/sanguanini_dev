@@ -1,0 +1,13 @@
+/* TEAM */
+Dev, design e conteúdo: Rodrigo Sanguanini
+Contato: contato@sanguanini.dev
+GitHub: @rodrigokiller
+Local: Herval d'Oeste, SC - Brasil
+
+/* SITE */
+Stack: HTML, CSS e JS puros - zero frameworks, zero build
+Fontes: JetBrains Mono, Inter (self-hosted)
+Tema: Fósforo - terminal verde sobre near-black, raio zero
+Repo: https://github.com/rodrigokiller/sanguanini_dev
+
+rodrigo@sanguanini.dev:~$ cat /dev/coffee

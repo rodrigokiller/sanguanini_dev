@@ -13,6 +13,7 @@ index.html
 favicon.svg
 manifest.webmanifest
 .htaccess
+robots.txt  sitemap.xml  llms.txt  humans.txt
 css/site.css
 js/site.js
 fonts/*.woff2

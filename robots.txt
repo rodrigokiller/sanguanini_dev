@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /erros/
+
+Sitemap: https://sanguanini.dev/sitemap.xml

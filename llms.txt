@@ -1,0 +1,30 @@
+# sanguanini.dev
+
+> Site pessoal de Rodrigo Sanguanini: desenvolvedor de software, consultor
+> Senior ERP e DBA em Herval d'Oeste, Santa Catarina, Brasil. 14+ anos de
+> experiência. Disponível para consultoria.
+
+## Quem é
+
+Especialista em Senior ERP (LSP, customizações, SDE), Oracle e SQL Server,
+integrações entre sistemas, PHP, C#/.NET, TypeScript/React e Python.
+Consultoria própria (Sanguanini DEV) desde 2021. Pós-graduando em Engenharia
+de Software em IA Aplicada (UNIPDS).
+
+## Produtos próprios em produção
+
+- [Jhourney](https://jhourney.com.br): controle de ponto e faturamento por cliente para consultores
+- [ConectaX](https://conectax.app): compras, estoque e coleções da casa, PWA offline-first
+- [RomVault](https://romvault.app): hub de jogos, romhacks e traduções com comunidade
+- [SeniorOps](https://seniorops.app): observabilidade e operação para o Senior ERP
+- [GoCLI](https://www.gocli.com.br): CRM e força de vendas SaaS para PMEs brasileiras
+
+## Open source / hobby
+
+- Ferramentas de romhacking (LoM Studio, Tile Studio, TIM Studio): https://github.com/rodrigokiller
+
+## Contato
+
+- E-mail: contato@sanguanini.dev
+- GitHub: https://github.com/rodrigokiller
+- LinkedIn: https://www.linkedin.com/in/rodrigo-sanguanini-66116b7b/
