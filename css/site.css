@@ -146,9 +146,28 @@ a:focus-visible, button:focus-visible {
   display: flex; gap: 2px; flex-wrap: wrap;
   font-family: var(--mono); font-size: 12px;
 }
-.nav a { color: var(--muted); padding: 6px 10px; transition: color var(--t-fast), background var(--t-fast); }
+.nav a { color: var(--muted); padding: 6px 10px; transition: color var(--t-fast), background var(--t-fast); white-space: nowrap; }
 .nav a:hover { color: var(--ink-bright); text-decoration: none; background: var(--panel-2); }
 .nav a[aria-current='true'] { color: var(--accent); background: var(--accent-dim); }
+
+/* mobile: logo centralizado, nav numa linha só, arrastável */
+@media (max-width: 640px) {
+  html { scroll-padding-top: 116px; }
+  .site-header .wrap {
+    flex-direction: column; align-items: center; gap: 4px;
+    padding-top: 10px; padding-bottom: 0;
+  }
+  .nav {
+    flex-wrap: nowrap; overflow-x: auto;
+    max-width: 100%; padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* esmaece a borda direita como dica de que dá pra arrastar */
+    mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 28px), transparent);
+    -webkit-mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 28px), transparent);
+  }
+  .nav::-webkit-scrollbar { display: none; }
+}
 
 /* ------------------------------------------------------------
    Hero
@@ -437,6 +456,12 @@ button.abrir {
   padding-top: 12px; padding-bottom: 12px;
 }
 .rodape .on::before { content: '● '; color: var(--accent); }
+
+/* mobile: só o essencial - online à esquerda, © à direita */
+@media (max-width: 640px) {
+  .so-desktop { display: none; }
+  .rodape .wrap { justify-content: space-between; flex-wrap: nowrap; }
+}
 .rodape .crt-toggle {
   font: inherit; background: none; border: 1px solid var(--line);
   color: var(--muted); padding: 4px 10px; cursor: pointer; margin-left: auto;
