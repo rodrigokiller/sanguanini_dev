@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Currículo - Rodrigo Sanguanini</title>
+<style>
+  /* Versão papel do tema Fósforo: mesma geometria (raio zero, réguas),
+     invertida para impressão. Edite e re-gere o PDF quando quiser. */
+  @font-face {
+    font-family: 'Inter';
+    font-weight: 100 900;
+    src: url('../fonts/inter-latin.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'JetBrains Mono';
+    font-weight: 100 800;
+    src: url('../fonts/jetbrains-mono-latin.woff2') format('woff2');
+  }
+  :root {
+    --ink: #17211c;
+    --muted: #5c6f68;
+    --line: #d9e2dd;
+    --line-strong: #a9bab2;
+    --accent: #0e8f60;
+    --mono: 'JetBrains Mono', 'Cascadia Mono', ui-monospace, Consolas, monospace;
+    --sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; border-radius: 0; margin: 0; }
+  html, body { background: #fff; }
+  body {
+    font-family: var(--sans); color: var(--ink);
+    font-size: 9.6pt; line-height: 1.45;
+    width: 210mm; margin: 0 auto; padding: 13mm 15mm;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  /* cabeçalho */
+  header { display: flex; align-items: center; gap: 14px; border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
+  header svg { flex-shrink: 0; }
+  h1 { font-family: var(--mono); font-size: 20pt; font-weight: 700; letter-spacing: -0.02em; }
+  h1 .dev { color: var(--accent); }
+  .titulo { font-family: var(--mono); font-size: 9pt; color: var(--muted); margin-top: 2px; }
+  .contato {
+    margin-left: auto; text-align: right;
+    font-family: var(--mono); font-size: 7.6pt; color: var(--muted); line-height: 1.7;
+  }
+  .contato b { color: var(--ink); font-weight: 600; }
+
+  /* seções */
+  section { margin-top: 13px; }
+  h2 {
+    font-family: var(--mono); font-size: 8pt; font-weight: 700;
+    letter-spacing: 0.14em; color: var(--accent);
+    border-bottom: 1px solid var(--line); padding-bottom: 3px; margin-bottom: 8px;
+  }
+  h2::before { content: '// '; }
+
+  .resumo { color: var(--ink); max-width: 68ch; }
+
+  /* experiência */
+  .evento { display: flex; gap: 12px; margin-bottom: 7px; break-inside: avoid; }
+  .quando {
+    font-family: var(--mono); font-size: 7.4pt; color: var(--muted);
+    flex-shrink: 0; width: 78px; padding-top: 1.5px;
+    font-variant-numeric: tabular-nums;
+  }
+  .evento h3 { font-size: 9.8pt; font-weight: 650; }
+  .evento h3 small { font-weight: 400; color: var(--muted); font-size: 8.6pt; }
+  .evento p { color: var(--muted); font-size: 8.8pt; }
+
+  /* duas colunas: produtos | formação+stack */
+  .colunas { display: flex; gap: 20px; }
+  .colunas > div { flex: 1; min-width: 0; }
+
+  .produto { margin-bottom: 5.5px; break-inside: avoid; }
+  .produto b { font-family: var(--mono); font-size: 8.8pt; font-weight: 700; }
+  .produto .url { font-family: var(--mono); font-size: 7.2pt; color: var(--accent); }
+  .produto p { color: var(--muted); font-size: 8.2pt; }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 4px; }
+  .skills span {
+    font-family: var(--mono); font-size: 7.4pt;
+    border: 1px solid var(--line-strong); color: var(--ink);
+    padding: 1.5px 6px; white-space: nowrap;
+  }
+  .skills span.forte { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+
+  .linha-info { font-family: var(--mono); font-size: 8pt; color: var(--muted); margin-top: 6px; }
+  .linha-info b { color: var(--ink); font-weight: 600; }
+
+  footer {
+    margin-top: 14px; border-top: 1px solid var(--line); padding-top: 6px;
+    font-family: var(--mono); font-size: 7pt; color: var(--muted);
+    display: flex; justify-content: space-between;
+  }
+
+  @media print {
+    body { padding: 10mm 13mm; }
+    @page { size: A4; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <svg width="52" height="52" viewBox="0 0 32 32" aria-hidden="true">
+      <rect width="32" height="32" fill="#0b0e10"/>
+      <polygon points="10,5 26,5 26,11 12,11 12,13 16,13 16,19 6,19 6,9" fill="#34e2a0"/>
+      <polygon points="22,27 6,27 6,21 20,21 20,19 16,19 16,13 26,13 26,23" fill="#d6e2dc"/>
+    </svg>
+    <div>
+      <h1>Rodrigo Sanguanini<span class="dev">.dev</span></h1>
+      <div class="titulo">desenvolvedor de software · consultor senior erp · dba</div>
+    </div>
+    <div class="contato">
+      <b>contato@sanguanini.dev</b><br>
+      sanguanini.dev · github.com/rodrigokiller<br>
+      linkedin.com/in/rodrigo-sanguanini-66116b7b<br>
+      Herval d'Oeste, SC - Brasil
+    </div>
+  </header>
+
+  <section>
+    <h2>resumo</h2>
+    <p class="resumo">
+      Desenvolvedor de software com 14+ anos de estrada: front-end, back-end, UX/UI,
+      integrações entre sistemas e banco de dados. Especialista em Senior ERP (LSP,
+      customizações, SDE) e Oracle/SQL Server. Fora do expediente, construo e mantenho
+      cinco produtos web próprios em produção e ferramentas open source de romhacking.
+    </p>
+  </section>
+
+  <section>
+    <h2>experiência</h2>
+    <div class="evento">
+      <span class="quando">2021 - hoje</span>
+      <div><h3>Sanguanini DEV <small>· consultoria própria</small></h3>
+      <p>Consultoria Senior ERP, integrações e desenvolvimento sob medida para múltiplos clientes.</p></div>
+    </div>
+    <div class="evento">
+      <span class="quando">2023 - hoje</span>
+      <div><h3>Adami S.A. <small>· programador</small></h3>
+      <p>Oracle e customizações LSP no Senior ERP.</p></div>
+    </div>
+    <div class="evento">
+      <span class="quando">2021 - 2026</span>
+      <div><h3>Gelnex Gelatin / Rousselot Latam <small>· programador</small></h3>
+      <p>Oracle, LSP, integrações entre sistemas, PHP, C# e DevExpress XAF. Sistemas internos: SIG (recebimento de NF-e via SDE), WMS de bigbags e SGCQ (controle de qualidade por lote).</p></div>
+    </div>
+    <div class="evento">
+      <span class="quando">2019 - 2021</span>
+      <div><h3>PS-Team Deutschland GmbH <small>· programador · Walluf, Alemanha</small></h3>
+      <p>Desenvolvimento .NET Framework / C# para o mercado alemão.</p></div>
+    </div>
+    <div class="evento">
+      <span class="quando">2012 - 2019</span>
+      <div><h3>Sancon - Senior Un. do Contestado <small>· dev &amp; consultor · Joaçaba, SC</small></h3>
+      <p>PHP Symfony, AngularJS, telas, relatórios e regras Senior - onde o ERP virou especialidade.</p></div>
+    </div>
+    <div class="evento">
+      <span class="quando">2008 - 2011</span>
+      <div><h3>Arte-finalista <small>· pré-impressão, offset, CTP e fotolito</small></h3>
+      <p>Design gráfico - o olho para o pixel vem de lá.</p></div>
+    </div>
+  </section>
+
+  <div class="colunas">
+    <section>
+      <h2>produtos próprios em produção</h2>
+      <div class="produto"><b>jhourney</b> <span class="url">jhourney.com.br</span>
+        <p>Ponto e faturamento por cliente para consultores. React 19, TypeScript, Supabase.</p></div>
+      <div class="produto"><b>conectax</b> <span class="url">conectax.app</span>
+        <p>Compras, estoque e coleções da casa. PWA offline-first.</p></div>
+      <div class="produto"><b>romvault</b> <span class="url">romvault.app</span>
+        <p>Hub de jogos, hacks e traduções, com tracking e comunidade.</p></div>
+      <div class="produto"><b>seniorops</b> <span class="url">seniorops.app</span>
+        <p>Observabilidade e operação para o Senior ERP. Python, Flask, React.</p></div>
+      <div class="produto"><b>gocli</b> <span class="url">gocli.com.br</span>
+        <p>CRM e força de vendas SaaS multi-tenant para PMEs. FastAPI, Next.js.</p></div>
+      <div class="produto"><b>lab</b> <span class="url">github.com/rodrigokiller</span>
+        <p>LoM/Tile/TIM Studio: ferramentas open source de romhacking (Electron, TypeScript).</p></div>
+    </section>
+
+    <section>
+      <h2>formação</h2>
+      <div class="evento">
+        <span class="quando">em curso</span>
+        <div><h3 style="font-size:9pt">Pós - Eng. de Software em IA Aplicada <small>· UNIPDS</small></h3></div>
+      </div>
+      <div class="evento">
+        <span class="quando">2018 - 2020</span>
+        <div><h3 style="font-size:9pt">MBA Desenvolvimento Full Stack <small>· IGTI</small></h3></div>
+      </div>
+      <div class="evento">
+        <span class="quando">2011 - 2015</span>
+        <div><h3 style="font-size:9pt">Ciência da Computação <small>· UNOESC</small></h3></div>
+      </div>
+
+      <h2 style="margin-top:12px">stack</h2>
+      <div class="skills">
+        <span class="forte">LSP · Senior ERP</span>
+        <span class="forte">Oracle</span>
+        <span class="forte">SQL Server</span>
+        <span>C# · .NET</span>
+        <span>PHP</span>
+        <span>TypeScript · React</span>
+        <span>Python</span>
+        <span>Integrações · SOAP/REST</span>
+        <span>Docker</span>
+        <span>Git</span>
+      </div>
+      <p class="linha-info">idiomas: <b>português</b> nativo · <b>inglês</b> fluente · <b>alemão</b> básico</p>
+    </section>
+  </div>
+
+  <footer>
+    <span>rodrigo@sanguanini.dev:~$ whoami</span>
+    <span>gerado de sanguanini.dev · 2026</span>
+  </footer>
+
+</body>
+</html>

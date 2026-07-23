@@ -1,691 +1,352 @@
-<!doctype html>
-<html lang="zxx">
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- color of address bar in mobile browser -->
-  <meta name="theme-color" content="#2B2B35">
-  <!-- favicon  -->
-  <link rel="shortcut icon" href="img/thumbnail.ico" type="image/x-icon">
-  <!-- bootstrap css -->
-  <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
-  <!-- font awesome css -->
-  <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
-  <!-- swiper css -->
-  <link rel="stylesheet" href="css/plugins/swiper.min.css">
-  <!-- fancybox css -->
-  <link rel="stylesheet" href="css/plugins/fancybox.min.css">
-  <!-- main css -->
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rodrigo Sanguanini - desenvolvedor de software &amp; consultor Senior ERP</title>
+  <meta name="description" content="Desenvolvedor de software e consultor Senior ERP em Santa Catarina. Construo produtos web (Jhourney, ConectaX, RomVault, SeniorOps, GoCLI), integrações entre sistemas e ferramentas de romhacking.">
+  <meta name="author" content="Rodrigo Sanguanini">
+  <meta name="theme-color" content="#0b0e10">
 
-  <title>Rodrigo Sanguanini</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="canonical" href="https://sanguanini.dev/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sanguanini.dev/">
+  <meta property="og:title" content="Rodrigo Sanguanini - sanguanini.dev">
+  <meta property="og:description" content="Desenvolvedor de software e consultor Senior ERP. Produtos web, integrações e ferramentas de romhacking.">
+  <meta property="og:image" content="https://sanguanini.dev/img/og.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/site.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rodrigo Sanguanini",
+    "url": "https://sanguanini.dev",
+    "jobTitle": "Desenvolvedor de Software / Consultor Senior ERP",
+    "address": { "@type": "PostalAddress", "addressRegion": "SC", "addressCountry": "BR" },
+    "sameAs": [
+      "https://github.com/rodrigokiller",
+      "https://www.linkedin.com/in/rodrigo-sanguanini-66116b7b/",
+      "https://mastodon.social/@rodrigokiller",
+      "https://www.twitter.com/rodrigokiller",
+      "https://www.instagram.com/rodrigokiller/"
+    ]
+  }
+  </script>
 </head>
-
 <body>
 
-  <!-- app -->
-  <div class="art-app">
-
-    <!-- mobile top bar -->
-    <div class="art-mobile-top-bar"></div>
-
-    <!-- app wrapper -->
-    <div class="art-app-wrapper">
-
-      <!-- app container end -->
-      <div class="art-app-container">
-
-        <!-- info bar -->
-        <div class="art-info-bar">
-
-          <!-- menu bar frame -->
-          <div class="art-info-bar-frame">
-
-            <!-- info bar header -->
-            <div class="art-info-bar-header">
-              <!-- info bar button -->
-              <a class="art-info-bar-btn" href="#.">
-                <!-- icon -->
-                <i class="fas fa-ellipsis-v"></i>
-              </a>
-              <!-- info bar button end -->
-            </div>
-            <!-- info bar header end -->
-
-            <!-- info bar header -->
-            <div class="art-header">
-              <!-- avatar -->
-              <div class="art-avatar">
-                <a data-fancybox="avatar" href="img/face-1_big.jpg" class="art-avatar-curtain">
-                  <img src="img/face-1.jpg" alt="avatar">
-                  <i class="fas fa-expand"></i>
-                </a>
-                <!-- available -->
-                <div class="art-lamp-light art-not-available">
-                  <!-- add class 'art-not-available' if not available, if available art-available-lamp-->
-                  <div class="art-available-lamp"></div>
-                </div>
-              </div>
-              <!-- avatar end -->
-              <!-- name -->
-              <h5 class="art-name mb-10"><a href="/index.html">Rodrigo Sanguanini</a></h5>
-              <!-- post -->
-              <div class="art-sm-text">Desenvolvedor de Software <br>Consultor de Tecnologia Senior ERP <br>Administrador de Banco de Dados </div>
-            </div>
-            <!-- info bar header end -->
-
-            <!-- scroll frame -->
-            <div id="scrollbar2" class="art-scroll-frame">
-
-              <!-- info bar about -->
-              <div class="art-table p-15-15">
-                <!-- about text -->
-                <ul>
-                  <!-- country -->
-                  <li>
-                    <h6>Residência:</h6><span>Brasil</span>
-                  </li>
-                  <!-- state -->
-                  <li>
-                    <h6>Estado:</h6><span>Santa Catarina</span>
-                  </li>
-                  <!-- age -->
-                  <li>
-                    <h6>Idade:</h6><span id="age_span">34</span>
-                  </li>
-                </ul>
-              </div>
-              <!-- info bar about end -->
-
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <!-- language skills -->
-              <div class="art-lang-skills p-30-15">
-
-                <!-- skill -->
-                <div class="art-lang-skills-item">
-                  <div id="circleprog1" class="art-cirkle-progress"></div>
-                  <!-- title -->
-                  <h6>Português</h6>
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <div class="art-lang-skills-item">
-                  <div id="circleprog2" class="art-cirkle-progress"></div>
-                  <!-- title -->
-                  <h6>Inglês</h6>
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <div class="art-lang-skills-item">
-                  <div id="circleprog3" class="art-cirkle-progress"></div>
-                  <!-- title -->
-                  <h6>Alemão</h6>
-                </div>
-                <!-- skill end -->
-
-              </div>
-              <!-- language skills end -->
-
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <!-- hard skills -->
-              <div class="art-hard-skills p-30-15">
-
-                <!-- skill -->
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <!-- title -->
-                    <h6>LSP Senior ERP</h6>
-                  </div>
-                  <!-- progressbar frame -->
-                  <div class="art-line-progress">
-                    <!-- progressbar -->
-                    <div id="lineprog1"></div>
-                  </div>
-                  <!-- progressbar frame end -->
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <!-- title -->
-                    <h6>DB: Oracle & SQL Server</h6>
-                  </div>
-                  <!-- progressbar frame -->
-                  <div class="art-line-progress">
-                    <!-- progressbar -->
-                    <div id="lineprog2"></div>
-                  </div>
-                  <!-- progressbar frame end -->
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <!-- title -->
-                    <h6>C#</h6>
-                  </div>
-                  <!-- progressbar frame -->
-                  <div class="art-line-progress">
-                    <!-- progressbar -->
-                    <div id="lineprog3"></div>
-                  </div>
-                  <!-- progressbar frame end -->
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <!-- title -->
-                    <h6>PHP</h6>
-                  </div>
-                  <!-- progressbar frame -->
-                  <div class="art-line-progress">
-                    <!-- progressbar -->
-                    <div id="lineprog4"></div>
-                  </div>
-                  <!-- progressbar frame end -->
-                </div>
-                <!-- skill end -->
-
-                <!-- skill -->
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <!-- title -->
-                    <h6>Python</h6>
-                  </div>
-                  <!-- progressbar frame -->
-                  <div class="art-line-progress">
-                    <!-- progressbar -->
-                    <div id="lineprog5"></div>
-                  </div>
-                  <!-- progressbar frame end -->
-                </div>
-                <!-- skill end -->
-
-              </div>
-              <!-- language skills end -->
-
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <!-- knowledge list -->
-              <ul class="art-knowledge-list p-15-0">
-                <!-- list item -->
-                <li>html, JS, CSS</li>
-                <!-- list item -->
-                <li>CRUD, Back-end, Front-end</li>
-                <!-- list item -->
-                <li>Symphony PHP, DevExpress XAF</li>
-                <!-- list item -->
-                <li>Conhecimento em GIT</li>
-              </ul>
-              <!-- knowledge list end -->
-
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <!-- links frame -->
-              <div class="art-links-frame p-15-15">
-
-                <!-- download cv button -->
-                <a href="files/cv.txt" class="art-link" download>Baixar currículo <i class="fas fa-download"></i></a>
-
-              </div>
-              <!-- links frame end -->
-
-            </div>
-            <!-- scroll frame end -->
-
-            <!-- sidebar social -->
-            <div class="art-ls-social">
-              <!-- social link -->
-              <a href="https://www.twitter.com/rodrigokiller" target="_blank"><i class="fab fa-twitter"></i></a>
-              <!-- social link -->
-              <a href="https://mastodon.social/@rodrigokiller" target="_blank" rel="me" ><i class="fab fa-mastodon"></i></a>
-              <!-- social link -->
-              <a href="https://github.com/rodrigokiller" target="_blank"><i class="fab fa-github"></i></a>
-              <!-- social link -->
-              <a href="https://facebook.com/rodrigokiller" target="_blank"><i class="fab fa-facebook"></i></a>
-              <!-- social link -->
-              <a href="https://www.instagram.com/rodrigokiller/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <!-- social link -->
-              <a href="https://www.linkedin.com/in/rodrigo-sanguanini-66116b7b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <!-- sidebar social end -->
-
-          </div>
-          <!-- menu bar frame end -->
-
-        </div>
-        <!-- info bar end -->
-
-        <!-- content -->
-        <div class="art-content">
-
-          <!-- curtain -->
-          <div class="art-curtain"></div>
-
-          <!-- top background -->
-          <div class="art-top-bg" style="background-image: url(img/bg.jpg)">
-            <!-- overlay -->
-            <div class="art-top-bg-overlay"></div>
-            <!-- overlay end -->
-          </div>
-          <!-- top background end -->
-
-          <!-- swup container -->
-          <div class="transition-fade" id="swup">
-
-            <!-- scroll frame -->
-            <div id="scrollbar" class="art-scroll-frame">
-
-              <!-- container -->
-              <div class="container-fluid">
-
-                <!-- row -->
-                <div class="row p-60-0 p-lg-30-0 p-md-15-0">
-                  <!-- col -->
-                  <div class="col-lg-12">
-
-                    <!-- banner -->
-                    <div class="art-a art-banner" style="background-image: url(img/bg.jpg)">
-                      <!-- banner back -->
-                      <div class="art-banner-back"></div>
-                      <!-- banner dec -->
-                      <div class="art-banner-dec"></div>
-                      <!-- banner overlay -->
-                      <div class="art-banner-overlay">
-                        <!-- main title -->
-                        <div class="art-banner-title">
-                          <!-- title -->
-                          <h1 class="mb-15">Bem vindo <br>ao meu espaço</h1>
-                          <!-- suptitle -->
-                          <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; Eu <span class="txt-rotate" data-period="2000"
-                              data-rotate='[ "desenvolvo aplicações web e Windows.", "faço consultoria de tecnologia Senior ERP.", "crio customizações no Senior ERP.", "desenvolvo integrações entre sistemas.", "crio scripts diversos para seu banco." ]'></span>&lt;/<i>code</i>&gt;</div>
-                          <!-- <div class="art-buttons-frame"> -->
-                            <!-- button -->
-                            <!-- <a href="/portfolio-3-col-masonry.html" class="art-btn art-btn-md"><span>Explore now</span></a> -->
-                          <!-- </div> -->
-                        </div>
-                        <!-- main title end -->
-                        <!-- photo -->
-                        <img src="img/face-2.png" class="art-banner-photo" alt="Your Name">
-                      </div>
-                      <!-- banner overlay end -->
-                    </div>
-                    <!-- banner end -->
-
-                  </div>
-                  <!-- col end -->
-                </div>
-                <!-- row end -->
-
-              </div>
-              <!-- container end -->
-
-              <!-- container -->
-              <div class="container-fluid">
-
-                <!-- row -->
-                <div class="row p-30-0">
-
-                  <!-- col -->
-                  <div class="col-md-3 col-6">
-
-                    <!-- couner frame -->
-                    <div class="art-counter-frame">
-                      <!-- counter -->
-                      <div class="art-counter-box">
-                        <!-- counter number -->
-                        <span class="art-counter">12</span><span class="art-counter-plus">+</span>
-                      </div>
-                      <!-- counter end -->
-                      <!-- title -->
-                      <h6>Anos de Experiência</h6>
-                    </div>
-                    <!-- couner frame end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-md-3 col-6">
-
-                    <!-- couner frame -->
-                    <div class="art-counter-frame">
-                      <!-- counter -->
-                      <div class="art-counter-box">
-                        <!-- counter number -->
-                        <span class="art-counter">20</span><span class="art-counter-plus">+</span>
-                      </div>
-                      <!-- counter end -->
-                      <!-- title -->
-                      <h6>Clientes Atendidos</h6>
-                    </div>
-                    <!-- couner frame end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-md-3 col-6">
-
-                    <!-- couner frame -->
-                    <div class="art-counter-frame">
-                      <!-- counter -->
-                      <div class="art-counter-box">
-                        <!-- counter number -->
-                        <span class="art-counter">5</span>
-                      </div>
-                      <!-- counter end -->
-                      <!-- title -->
-                      <h6>Projetos WEB</h6>
-                    </div>
-                    <!-- couner frame end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-md-3 col-6">
-
-                    <!-- couner frame -->
-                    <div class="art-counter-frame">
-                      <!-- counter -->
-                      <div class="art-counter-box">
-                        <!-- counter number -->
-                        <span class="art-counter">1000000</span><span class="art-counter-plus">+</span>
-                      </div>
-                      <!-- counter end -->
-                      <!-- title -->
-                      <h6>Linhas de código</h6>
-                    </div>
-                    <!-- couner frame end -->
-
-                  </div>
-                  <!-- col end -->
-
-                </div>
-                <!-- row end -->
-
-              </div>
-              <!-- container end -->
-
-              <!-- container -->
-              <div class="container-fluid">
-
-                <!-- row -->
-                <div class="row">
-
-                  <!-- col -->
-                  <div class="col-lg-12">
-
-                    <!-- section title -->
-                    <div class="art-section-title">
-                      <!-- title frame -->
-                      <div class="art-title-frame">
-                        <!-- title -->
-                        <h4>Meus Serviços</h4>
-                      </div>
-                      <!-- title frame end -->
-                    </div>
-                    <!-- section title end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-lg-4 col-md-6">
-
-                    <!-- service -->
-                    <div class="art-a art-service-icon-box">
-                      <!-- service content -->
-                      <div class="art-service-ib-content">
-                        <!-- title -->
-                        <h5 class="mb-15">Desenvolvimento Web</h5>
-                        <!-- text -->
-                        <div class="mb-15">Desenvolvimento web, dividindo front-end (AngularJS) e back-end (Sympnony PHP) e utilizando ORM. Também é possível projetos mais simples apenas em PHP ou desenvolvimento web utilizando DevExpress XAF (C# .NET Framework).</div>
-                        <!-- button -->
-                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Entre em contato</a></div>
-                      </div>
-                      <!-- service content end -->
-                    </div>
-                    <!-- service end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-lg-4 col-md-6">
-
-                    <!-- service -->
-                    <div class="art-a art-service-icon-box">
-                      <!-- service content -->
-                      <div class="art-service-ib-content">
-                        <!-- title -->
-                        <h5 class="mb-15">Consultoria de Tecnologia Senior ERP</h5>
-                        <!-- text -->
-                        <div class="mb-15">Desenvolvimento de customizações no Senior ERP em telas SGI, relatórios e regras. Possibilidade também de analisar processos existentes, de verificar identificadores de regras, regras por evento, etc.</div>
-                        <!-- button -->
-                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Entre em contato</a></div>
-                      </div>
-                      <!-- service content end -->
-                    </div>
-                    <!-- service end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-lg-4 col-md-6">
-
-                    <!-- service -->
-                    <div class="art-a art-service-icon-box">
-                      <!-- service content -->
-                      <div class="art-service-ib-content">
-                        <!-- title -->
-                        <h5 class="mb-15">Integração de Sistemas</h5>
-                        <!-- text -->
-                        <div class="mb-15">Realizar integrações entre sistemas, como por exemplo, sistemas de compras com sistemas ERP ou sistemas de controle de estoques e sistemas ERP. Integrações via banco de dados, web services, API's ou até mesmo utilizando outras ferramentas do cliente.</div>
-                        <!-- button -->
-                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Entre em contato</a></div>
-                      </div>
-                      <!-- service content end -->
-                    </div>
-                    <!-- service end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-lg-4 col-md-6">
-
-                    <!-- service -->
-                    <div class="art-a art-service-icon-box">
-                      <!-- service content -->
-                      <div class="art-service-ib-content">
-                        <!-- title -->
-                        <h5 class="mb-15">Desenvolvimentos de Software Diversos</h5>
-                        <!-- text -->
-                        <div class="mb-15">Minha expertize permite criar software para Windows Forms (ou WPF, console, etc.) utilizando C# e .NET Core / .NET Framework. Também posso desenvolver scripts em python para realizar tarefas desejadas, como criar um serviço de API de impressão (spoofer), etc.</div>
-                        <!-- button -->
-                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Entre em contato</a></div>
-                      </div>
-                      <!-- service content end -->
-                    </div>
-                    <!-- service end -->
-
-                  </div>
-                  <!-- col end -->
-
-                  <!-- col -->
-                  <div class="col-lg-4 col-md-6">
-
-                    <!-- service -->
-                    <div class="art-a art-service-icon-box">
-                      <!-- service content -->
-                      <div class="art-service-ib-content">
-                        <!-- title -->
-                        <h5 class="mb-15">Banco de Dados</h5>
-                        <!-- text -->
-                        <div class="mb-15">Com muita experiência em Oracle e também SQL Server, posso analisar estruturas de banco para melhorar performance, triggers, stored procedures, análises em queries diversas e também realizar rotinas de backup e restore de banco. Não sou focado na área de banco de dados como um DBA mas posso fazer o possível para ajudar neste sentido.</div>
-                        <!-- button -->
-                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Entre em contato</a></div>
-                      </div>
-                      <!-- service content end -->
-                    </div>
-                    <!-- service end -->
-
-                  </div>
-                  <!-- col end -->
-
-                </div>
-                <!-- row end -->
-
-              </div>
-              <!-- container end -->
-
-              
-
-              <!-- container -->
-              <div class="container-fluid">
-
-                <!-- footer -->
-                <footer>
-                  <!-- copyright -->
-                  <div>© 2024 Rodrigo Sanguanini</div>
-                  <!-- author ( Please! Do not delete it. You are awesome! :) -->
-                  <!-- sorry bro, i've commented it :D-->
-                  <!-- <div>Template:&#160; <a href="https://themeforest.net/user/millerdigitaldesign" target="_blank">Nazar Miller</a></div> -->
-                </footer>
-                <!-- footer end -->
-
-              </div>
-              <!-- container end -->
-
-            </div>
-            <!-- scroll frame end -->
-
-          </div>
-          <!-- swup container end -->
-
-        </div>
-        <!-- content end -->
-
-        <!-- menu bar -->
-        <div class="art-menu-bar">
-
-          <!-- menu bar frame -->
-          <div class="art-menu-bar-frame">
-
-            <!-- menu bar header -->
-            <div class="art-menu-bar-header">
-              <!-- menu bar button -->
-              <a class="art-menu-bar-btn" href="#.">
-                <!-- icon -->
-                <span></span>
-              </a>
-              <!-- menu bar button end -->
-            </div>
-            <!-- menu bar header end -->
-
-            <!-- current page title -->
-            <div class="art-current-page"></div>
-            <!-- current page title end -->
-
-            <!-- scroll frame -->
-            <div class="art-scroll-frame">
-
-              <!-- menu -->
-              <nav id="swupMenu">
-                <!-- menu list -->
-                <ul class="main-menu">
-                  <!-- menu item -->
-                  <li class="menu-item current-menu-item"><a href="/index.html">Início</a></li>
-                  <!-- menu item -->
-                  <li class="menu-item"><a href="/history.html">Histórico</a></li>
-                  <!-- menu item -->
-                  <li class="menu-item"><a href="/contact.html">Contato</a></li>
-                </ul>
-                <!-- menu list end -->
-              </nav>
-              <!-- menu end -->
-
-              <!-- language change -->
-              <ul class="art-language-change">
-                <!-- language item -->
-                <li><a href="./index_en.html">EN</a></li>
-                <!-- language item -->
-                <li class="art-active-lang"><a href="#.">PT</a></li>
-              </ul>
-              <!-- language change end -->
-
-            </div>
-            <!-- scroll frame end -->
-
-          </div>
-          <!-- menu bar frame -->
-
-        </div>
-        <!-- menu bar end -->
-
-      </div>
-      <!-- app container end -->
-
-    </div>
-    <!-- app wrapper end -->
-
-    <!-- preloader -->
-    <div class="art-preloader">
-      <!-- preloader content -->
-      <div class="art-preloader-content">
-        <!-- title -->
-        <h4>Rodrigo Sanguanini</h4>
-        <!-- progressbar -->
-        <div id="preloader" class="art-preloader-load"></div>
-      </div>
-      <!-- preloader content end -->
-    </div>
-    <!-- preloader end -->
-
+  <a class="skip-link" href="#inicio">pular para o conteúdo</a>
+
+  <!-- símbolo: o "S" de duas peças, redesenhado do favicon original -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <polygon id="peca-a" points="10,5 26,5 26,11 12,11 12,13 16,13 16,19 6,19 6,9"/>
+      <polygon id="peca-b" points="22,27 6,27 6,21 20,21 20,19 16,19 16,13 26,13 26,23"/>
+    </defs>
+  </svg>
+
+  <!-- ============ boot ============ -->
+  <div class="boot" id="boot" role="presentation" hidden>
+    <svg width="96" height="96" viewBox="0 0 32 32" aria-hidden="true">
+      <rect class="pulso" x="1" y="1" width="30" height="30" fill="none" stroke="#34e2a0" stroke-width="0.8"/>
+      <use class="pa" href="#peca-a" fill="#34e2a0"/>
+      <use class="pb" href="#peca-b" fill="#d6e2dc"/>
+    </svg>
+    <p class="boot-linha" id="boot-linha" aria-hidden="true">&nbsp;</p>
+    <span class="boot-dica">clique para pular</span>
   </div>
-  <!-- app end -->
 
-  <!-- jquery js -->
-  <script src="js/plugins/jquery.min.js"></script>
-  <!-- anime js -->
-  <script src="js/plugins/anime.min.js"></script>
-  <!-- swiper js -->
-  <script src="js/plugins/swiper.min.js"></script>
-  <!-- progressbar js -->
-  <script src="js/plugins/progressbar.min.js"></script>
-  <!-- smooth scrollbar js -->
-  <script src="js/plugins/smooth-scrollbar.min.js"></script>
-  <!-- overscroll js -->
-  <script src="js/plugins/overscroll.min.js"></script>
-  <!-- typing js -->
-  <script src="js/plugins/typing.min.js"></script>
-  <!-- isotope js -->
-  <script src="js/plugins/isotope.min.js"></script>
-  <!-- fancybox js -->
-  <script src="js/plugins/fancybox.min.js"></script>
-  <!-- swup js -->
-  <script src="js/plugins/swup.min.js"></script>
+  <!-- ============ header ============ -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="#inicio" aria-label="sanguanini.dev - início">
+        <svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true">
+          <use href="#peca-a" fill="#34e2a0"/>
+          <use href="#peca-b" fill="#d6e2dc"/>
+        </svg>
+        <span>sanguanini<span class="dev">.dev</span></span>
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#inicio" data-sec="inicio">~/inicio</a>
+        <a href="#projetos" data-sec="projetos">~/projetos</a>
+        <a href="#lab" data-sec="lab">~/lab</a>
+        <a href="#trajetoria" data-sec="trajetoria">~/trajetoria</a>
+        <a href="#contato" data-sec="contato">~/contato</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- main js -->
-  <script src="js/main.js"></script>
+  <main id="inicio">
 
+    <!-- ============ hero ============ -->
+    <section class="hero" style="border-top:0">
+      <div class="wrap">
+        <p class="prompt"><span class="user">rodrigo@sanguanini.dev</span>:~$ <span class="cmd">whoami</span><span class="caret" aria-hidden="true"></span></p>
+        <h1>Rodrigo Sanguanini</h1>
+        <p class="rotativa" aria-live="off"><span class="fixo">$ eu</span> <span id="rotativa-txt">desenvolvo aplicações web e Windows.</span></p>
+        <p class="bio">
+          Desenvolvedor de software e <strong>consultor Senior ERP</strong>.
+          Divido os dias entre banco de dados Oracle, regras LSP e integrações e as noites
+          construindo <strong>produtos web próprios</strong> e ferramentas diversas para passar o tempo.
+        </p>
+        <div class="acoes">
+          <a class="bt" href="#projetos">ver projetos</a>
+          <a class="bt sec" href="files/cv.pdf" download>baixar currículo</a>
+        </div>
+        <p class="sysinfo">
+          <span class="on">disponível para consultoria</span>
+          <span class="tnum">uptime: <b id="idade">35</b> anos · <b>14+</b> codando</span>
+          <span class="tnum">clientes_atendidos: <b>20+</b></span>
+          <span class="tnum">produtos_no_ar: <b>5</b></span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ projetos ============ -->
+    <section id="projetos" class="revela">
+      <div class="wrap">
+        <p class="kicker">// produtos em produção</p>
+        <h2>Coisas que construí e mantenho no ar</h2>
+        <p class="secao-intro">
+          Produtos completos, cada um com a própria marca,
+          todos com o mesmo core, focados na melhor UX com interfaces densas, cantos retos e zero enfeite.
+        </p>
+        <div class="grade-produtos">
+          <article class="produto" style="--marca: var(--c-jhourney)">
+            <div class="produto-topo"><h3>jhourney</h3><span class="url">jhourney.com.br</span></div>
+            <p>Controle de ponto e faturamento por cliente, para consultores. Apontamento de horas, conciliação com ponto eletrônico e commits, relatórios em Excel e PDF.</p>
+            <div class="stack"><span>React 19</span><span>TypeScript</span><span>Supabase</span></div>
+            <div class="produto-acoes">
+              <a class="abrir" href="https://jhourney.com.br" target="_blank" rel="noopener">abrir ↗</a>
+              <button class="abrir shots" type="button" data-nome="jhourney" data-shots="img/shots/jhourney-1.png,img/shots/jhourney-2.png,img/shots/jhourney-3.png,img/shots/jhourney-4.png">./screenshots</button>
+            </div>
+          </article>
+          <article class="produto" style="--marca: var(--c-conectax)">
+            <div class="produto-topo"><h3>conectax</h3><span class="url">conectax.app</span></div>
+            <p>Compras, estoque e coleções da casa, compartilhado com a família. Funciona offline, sincroniza sozinho e instala como app no celular.</p>
+            <div class="stack"><span>React</span><span>PWA</span><span>Supabase</span></div>
+            <div class="produto-acoes">
+              <a class="abrir" href="https://conectax.app" target="_blank" rel="noopener">abrir ↗</a>
+              <button class="abrir shots" type="button" data-nome="conectax" data-shots="img/shots/conectax-1.png,img/shots/conectax-2.png,img/shots/conectax-3.png,img/shots/conectax-4.png">./screenshots</button>
+            </div>
+          </article>
+          <article class="produto" style="--marca: var(--c-romvault)">
+            <div class="produto-topo"><h3>romvault</h3><span class="url">romvault.app</span></div>
+            <p>Hub de jogos: catálogo de jogos, hacks, traduções, documentos e ferramentas, com busca e comunidade. Tracking de jogos terminados, conquistas e progresso.</p>
+            <div class="stack"><span>React</span><span>TypeScript</span><span>Supabase</span></div>
+            <div class="produto-acoes">
+              <a class="abrir" href="https://romvault.app" target="_blank" rel="noopener">abrir ↗</a>
+              <button class="abrir shots" type="button" data-nome="romvault" data-shots="img/shots/romvault-1.png,img/shots/romvault-2.png,img/shots/romvault-3.png,img/shots/romvault-4.png,img/shots/romvault-5.png,img/shots/romvault-6.png">./screenshots</button>
+            </div>
+          </article>
+          <article class="produto" style="--marca: var(--c-seniorops)">
+            <div class="produto-topo"><h3>seniorops</h3><span class="url">seniorops.app</span></div>
+            <p>Observabilidade e operação para o Senior ERP: sessões Oracle e SQL Server, regras LSP, processos automáticos e alertas. Pesquisa de código em artefatos e banco de dados.</p>
+            <div class="stack"><span>Python</span><span>Flask</span><span>React</span></div>
+            <div class="produto-acoes">
+              <a class="abrir" href="https://seniorops.app" target="_blank" rel="noopener">abrir ↗</a>
+              <button class="abrir shots" type="button" data-nome="seniorops" data-shots="img/shots/seniorops-1.png,img/shots/seniorops-2.png,img/shots/seniorops-3.png,img/shots/seniorops-4.png,img/shots/seniorops-5.png">./screenshots</button>
+            </div>
+          </article>
+          <article class="produto" style="--marca: var(--c-gocli)">
+            <div class="produto-topo"><h3>gocli</h3><span class="url">gocli.com.br</span></div>
+            <p>CRM, força de vendas, gestão de equipes agrupadas e tarefas em um só lugar, para PMEs brasileiras. SaaS multi-tenant.</p>
+            <div class="stack"><span>FastAPI</span><span>Next.js</span><span>MySQL</span></div>
+            <div class="produto-acoes">
+              <a class="abrir" href="https://www.gocli.com.br" target="_blank" rel="noopener">abrir ↗</a>
+              <button class="abrir shots" type="button" data-nome="gocli" data-shots="img/shots/gocli-1.png,img/shots/gocli-2.jpg,img/shots/gocli-3.jpg,img/shots/gocli-4.png">./screenshots</button>
+            </div>
+          </article>
+          <article class="produto" style="--marca: var(--c-sig)">
+            <div class="produto-topo"><h3>sig</h3><span class="url">interno · gelnex</span></div>
+            <p>Sistema de Integração Gerencial: recebimento de notas eletrônicas no Senior ERP via SDE, com regras de-para por CFOP, UF e produto do fornecedor que automatizam transação, produto e impostos (CST, PIS, COFINS) na geração das notas de entrada. 2023–2024.</p>
+            <div class="stack"><span>Senior ERP</span><span>SDE</span><span>LSP</span></div>
+            <div class="produto-acoes">
+              <button class="abrir shots" type="button" data-nome="sig" data-shots="img/shots/sig-1.png,img/shots/sig-2.png">./screenshots</button>
+            </div>
+          </article>
+          <article class="produto" style="--marca: var(--c-wms)">
+            <div class="produto-topo"><h3>wms</h3><span class="url">interno · gelnex</span></div>
+            <p>WMS de estoque de bigbags de gelatina: mapa visual das gavetas dos pátios, cadastro dos drives no Senior ERP e gatilhos de guarda e retirada disparados pelas telas de mistura, moagem, recebimento e ensaque. ~2018.</p>
+            <div class="stack"><span>PHP</span><span>Senior ERP</span></div>
+            <div class="produto-acoes">
+              <button class="abrir shots" type="button" data-nome="wms" data-shots="img/shots/wms-1.png,img/shots/wms-2.png">./screenshots</button>
+            </div>
+          </article>
+          <article class="produto" style="--marca: var(--c-sgcq)">
+            <div class="produto-topo"><h3>sgcq</h3><span class="url">interno · gelnex</span></div>
+            <p>Gerenciamento de Controle de Qualidade por lote: lendo o código de barras do bigbag, o laboratório registra resultados de análises como blend, pH, cor e microbiológico. ~2018.</p>
+            <div class="stack"><span>PHP</span><span>Código de barras</span></div>
+            <div class="produto-acoes">
+              <button class="abrir shots" type="button" data-nome="sgcq" data-shots="img/shots/sgcq-1.png,img/shots/sgcq-2.png">./screenshots</button>
+            </div>
+          </article>
+          <div class="produto vazio" aria-hidden="true">
+            <div class="produto-topo"><h3>???</h3><span class="url">em breve</span></div>
+            <p class="prompt-vazio">$ watch build --next<br>compilando o próximo side project…<span class="caret"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ lab ============ -->
+    <section id="lab" class="revela">
+      <div class="wrap">
+        <p class="kicker">// lab - romhacking &amp; consoles antigos</p>
+        <h2>O lado fita-cassete</h2>
+        <p class="secao-intro">
+          Ferramentas que escrevo por hobby, tradução de jogos antigos, edição de gráficos em tiles, formatos esquecidos. Código aberto, no
+          <a href="https://github.com/rodrigokiller" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+        <div class="grade-lab">
+          <article class="ferramenta">
+            <h3>lom-studio</h3>
+            <p>Workbench completo para tradução do jogo Legend of Mana (PSX); Build da ISO em um clique, editores de texto, fonte, diálogos e legendas de vídeos.</p>
+            <div class="produto-acoes">
+              <a class="abrir" href="https://github.com/rodrigokiller" target="_blank" rel="noopener">github ↗</a>
+              <button class="abrir shots" type="button" data-nome="lom-studio" data-shots="img/shots/lom-studio-1.png,img/shots/lom-studio-2.png,img/shots/lom-studio-3.png,img/shots/lom-studio-4.png,img/shots/lom-studio-5.png,img/shots/lom-studio-6.png,img/shots/lom-studio-7.png">./screenshots</button>
+            </div>
+          </article>
+          <article class="ferramenta">
+            <h3>tile-studio</h3>
+            <p>Editor de gráficos em tiles de consoles antigos baseado no famoso Tile Manager. Abra qualquer arquivo binário, ajuste bpp e offset até a imagem aparecer e edite pixel a pixel.</p>
+            <div class="produto-acoes">
+              <a class="abrir" href="https://github.com/rodrigokiller" target="_blank" rel="noopener">github ↗</a>
+              <button class="abrir shots" type="button" data-nome="tile-studio" data-shots="img/shots/tile-studio-1.png">./screenshots</button>
+            </div>
+          </article>
+          <article class="ferramenta">
+            <h3>tim-studio</h3>
+            <p>Conversor e visualizador de imagens TIM do PlayStation, com extração direto da ISO e reimportação preservando paleta. Modernizado para fluxos de trabalho atuais, já que só existem ferramentas antigas.</p>
+            <div class="produto-acoes">
+              <a class="abrir" href="https://github.com/rodrigokiller" target="_blank" rel="noopener">github ↗</a>
+              <button class="abrir shots" type="button" data-nome="tim-studio" data-shots="img/shots/tim-studio-1.png">./screenshots</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ trajetória ============ -->
+    <section id="trajetoria" class="revela">
+      <div class="wrap">
+        <p class="kicker">// git log --reverse</p>
+        <h2>Trajetória</h2>
+        <div class="trajetoria">
+          <div class="timeline">
+            <div class="evento">
+              <span class="quando tnum">2023 - hoje</span>
+              <h3>Adami S.A. <small>· programador</small></h3>
+              <p>Oracle e customizações LSP no Senior ERP.</p>
+            </div>
+            <div class="evento">
+              <span class="quando tnum">2021 - 2026</span>
+              <h3>Gelnex Gelatin <small>· programador</small></h3>
+              <p>Oracle, LSP, integrações entre sistemas, PHP, C# e DevExpress XAF.</p>
+            </div>
+            <div class="evento">
+              <span class="quando tnum">2019 - 2021</span>
+              <h3>PS-Team Deutschland <small>· programador</small></h3>
+              <p>Desenvolvimento .NET Framework / C# para o mercado alemão.</p>
+            </div>
+            <div class="evento">
+              <span class="quando tnum">2012 - 2019</span>
+              <h3>Sancon - Senior Un. do Contestado <small>· dev &amp; consultor</small></h3>
+              <p>PHP Symfony, AngularJS e LSP - onde o Senior ERP virou especialidade.</p>
+            </div>
+            <div class="evento">
+              <span class="quando tnum">2008 - 2011</span>
+              <h3>Arte-finalista <small>· pré-impressão</small></h3>
+              <p>Design gráfico e offset - o olho para o pixel vem de lá.</p>
+            </div>
+            <div class="evento edu">
+              <span class="quando tnum">2026 - em curso</span>
+              <h3>Pós em Engenharia de Software em IA Aplicada <small>· UNIPDS</small></h3>
+            </div>
+            <div class="evento edu">
+              <span class="quando tnum">2018 - 2020</span>
+              <h3>MBA Desenvolvimento Full Stack <small>· IGTI</small></h3>
+            </div>
+            <div class="evento edu">
+              <span class="quando tnum">2011 - 2015</span>
+              <h3>Ciência da Computação <small>· UNOESC</small></h3>
+            </div>
+          </div>
+          <div class="stack-bloco">
+            <h3>stack principal</h3>
+            <div class="skill" style="--nivel:95"><div class="rot"><b>LSP · Senior ERP</b><span class="tnum">95%</span></div><div class="barra"><i></i></div></div>
+            <div class="skill" style="--nivel:90"><div class="rot"><b>Oracle · SQL Server</b><span class="tnum">90%</span></div><div class="barra"><i></i></div></div>
+            <div class="skill" style="--nivel:75"><div class="rot"><b>C# · .NET</b><span class="tnum">75%</span></div><div class="barra"><i></i></div></div>
+            <div class="skill" style="--nivel:75"><div class="rot"><b>PHP</b><span class="tnum">75%</span></div><div class="barra"><i></i></div></div>
+            <div class="skill" style="--nivel:70"><div class="rot"><b>TypeScript · React</b><span class="tnum">70%</span></div><div class="barra"><i></i></div></div>
+            <div class="skill" style="--nivel:45"><div class="rot"><b>Python</b><span class="tnum">45%</span></div><div class="barra"><i></i></div></div>
+            <p class="idiomas">
+              idiomas: <b>português</b> nativo · <b>inglês</b> fluente · <b>alemão</b> básico
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ contato ============ -->
+    <section id="contato" class="revela">
+      <div class="wrap">
+        <p class="kicker">// contato</p>
+        <h2>Vamos conversar?</h2>
+        <p class="secao-intro">
+          Consultoria Senior ERP, integrações, desenvolvimentos gerais, integrações entre sistemas, análises ou só para
+          falar de ferramentas, romhacking, traduções, jogos antigos, o que for. Eu respondo :)
+        </p>
+        <a class="email" href="mailto:contato@sanguanini.dev">contato@sanguanini.dev</a>
+        <div class="redes">
+          <a href="https://github.com/rodrigokiller" target="_blank" rel="noopener">github</a>
+          <a href="https://www.linkedin.com/in/rodrigo-sanguanini-66116b7b/" target="_blank" rel="noopener">linkedin</a>
+          <a href="https://www.twitter.com/rodrigokiller" target="_blank" rel="noopener">x/twitter</a>
+          <a rel="me noopener" href="https://mastodon.social/@rodrigokiller" target="_blank">mastodon</a>
+          <a href="https://www.instagram.com/rodrigokiller/" target="_blank" rel="noopener">instagram</a>
+          <a href="https://facebook.com/rodrigokiller" target="_blank" rel="noopener">facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ rodapé ============ -->
+  <footer class="rodape">
+    <div class="wrap">
+      <span class="on">online</span>
+      <span>© <span id="ano" class="tnum">2026</span> rodrigo sanguanini</span>
+      <span>html/css/js puros - feito à mão</span>
+      <button class="crt-toggle" id="crt" type="button" aria-pressed="false">[ crt: off ]</button>
+    </div>
+  </footer>
+
+  <!-- ============ galeria de screenshots ============ -->
+  <dialog class="galeria" id="galeria" aria-labelledby="galeria-titulo">
+    <div class="galeria-topo">
+      <span class="galeria-titulo" id="galeria-titulo">projeto</span>
+      <span class="galeria-conta tnum" id="galeria-conta">1/1</span>
+      <button class="galeria-fechar" id="galeria-fechar" type="button">[ esc ] fechar</button>
+    </div>
+    <div class="galeria-palco">
+      <button class="galeria-nav" id="galeria-ant" type="button" aria-label="Screenshot anterior">&lt;</button>
+      <img id="galeria-img" src="" alt="">
+      <button class="galeria-nav" id="galeria-prox" type="button" aria-label="Próximo screenshot">&gt;</button>
+    </div>
+    <p class="galeria-legenda" id="galeria-legenda"></p>
+  </dialog>
+
+  <script src="js/site.js"></script>
 </body>
-
 </html>

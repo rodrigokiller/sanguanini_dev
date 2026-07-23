@@ -1,9 +1,8 @@
 # nunca versionar: contém senha SMTP real em texto plano
 OLD_2024/
 
-# o site novo entra no próximo commit, na raiz
-v2/
-marca/
+# prints antigos/duplicados aguardando triagem
+img/shots/ajusta_pra_mim/
 
 # lixo de SO
 Thumbs.db
