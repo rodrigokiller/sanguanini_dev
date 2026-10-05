@@ -44,7 +44,7 @@
   --c-sig: #56c8d8;
   --c-wms: #e5c07b;
   --c-sgcq: #e087b8;
-  --c-cosmos: #7dc4ff;
+  --c-universatlas: #7dc4ff;
 
   --sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
   --mono: 'JetBrains Mono', 'Cascadia Mono', ui-monospace, Consolas, monospace;
@@ -324,11 +324,28 @@ button.abrir {
   --marca: var(--amber);
   background: var(--panel); padding: var(--s4) var(--s5);
   display: flex; flex-direction: column; gap: var(--s2);
-  color: inherit;
+  color: inherit; position: relative;
   transition: background var(--t-base) var(--ease);
 }
 .ferramenta .produto-acoes { margin-top: auto; padding-top: var(--s2); }
 .ferramenta:hover { background: var(--panel-2); text-decoration: none; }
+
+/* ------------------------------------------------------------
+   Card inteiro clicável: o link "abrir" se estica sobre o card
+   via ::after; o botão ./screenshots fica por cima com z-index.
+   Card sem link (sig/wms/sgcq) segue só com a galeria.
+   ------------------------------------------------------------ */
+.produto a.abrir::after,
+.ferramenta a.abrir::after {
+  content: '';
+  position: absolute; inset: 0;
+}
+.produto .shots,
+.ferramenta .shots { position: relative; z-index: 1; }
+.produto:has(a.abrir:focus-visible),
+.ferramenta:has(a.abrir:focus-visible) { outline: 2px solid var(--marca); outline-offset: 2px; }
+.produto:has(a.abrir) { cursor: pointer; }
+.ferramenta:has(a.abrir) { cursor: pointer; }
 .ferramenta h3 {
   font-family: var(--mono); font-size: 0.95rem; font-weight: 700;
   margin: 0; color: var(--amber);
