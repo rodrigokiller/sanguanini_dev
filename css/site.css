@@ -277,7 +277,14 @@ section h2 {
 .produto:hover { background: var(--panel-2); text-decoration: none; transform: translateY(-2px); }
 .produto:hover .abrir { color: var(--marca); }
 
-.produto-topo { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s3); }
+.produto-topo { display: flex; align-items: center; justify-content: space-between; gap: var(--s3); }
+.produto-topo h3 img {
+  display: block; height: 28px; width: auto; max-width: 100%;
+  transition: filter var(--t-base) var(--ease);
+}
+.produto:hover .produto-topo h3 img {
+  filter: drop-shadow(0 0 7px color-mix(in srgb, var(--marca) 40%, transparent));
+}
 .produto h3 {
   font-family: var(--mono); font-size: 1.05rem; font-weight: 700;
   margin: 0; color: var(--marca); letter-spacing: -0.01em;
