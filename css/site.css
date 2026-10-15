@@ -46,6 +46,7 @@
   --c-sgcq: #e087b8;
   --c-universatlas: #7dc4ff;
   --c-diskplot: #7f95ee;
+  --c-yggdex: #e0ad3a;
 
   --sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
   --mono: 'JetBrains Mono', 'Cascadia Mono', ui-monospace, Consolas, monospace;
@@ -282,19 +283,20 @@ section h2 {
   display: block; height: 28px; width: auto; max-width: 100%;
   transition: filter var(--t-base) var(--ease);
 }
-.produto:hover .produto-topo h3 img {
+.produto:hover .produto-topo h3 img,
+.ferramenta:hover .produto-topo h3 img {
   filter: drop-shadow(0 0 7px color-mix(in srgb, var(--marca) 40%, transparent));
 }
 .produto h3 {
   font-family: var(--mono); font-size: 1.05rem; font-weight: 700;
   margin: 0; color: var(--marca); letter-spacing: -0.01em;
 }
-.produto .url { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.produto .url, .ferramenta .url { font-family: var(--mono); font-size: 11px; color: var(--muted); }
 .produto p { margin: 0; font-size: 0.9rem; color: var(--ink); }
-.produto .stack {
+.produto .stack, .ferramenta .stack {
   display: flex; gap: 6px; flex-wrap: wrap; margin-top: auto; padding-top: var(--s2);
 }
-.produto .stack span {
+.produto .stack span, .ferramenta .stack span {
   font-family: var(--mono); font-size: 10px; color: var(--muted);
   border: 1px solid var(--line-bright); padding: 2px 7px;
 }
@@ -336,6 +338,7 @@ button.abrir {
   transition: background var(--t-base) var(--ease);
 }
 .ferramenta .produto-acoes { margin-top: auto; padding-top: var(--s2); }
+.ferramenta .stack + .produto-acoes { margin-top: var(--s1); padding-top: 0; }
 .ferramenta:hover { background: var(--panel-2); text-decoration: none; }
 
 /* ------------------------------------------------------------
@@ -359,6 +362,7 @@ button.abrir {
   margin: 0; color: var(--amber);
 }
 .ferramenta h3::before { content: '~/'; color: var(--muted); font-weight: 400; }
+.ferramenta h3:has(img)::before { content: none; }
 .ferramenta p { margin: 0; font-size: 0.85rem; color: var(--muted); }
 .ferramenta:hover p { color: var(--ink); }
 

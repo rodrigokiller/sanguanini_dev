@@ -24,6 +24,7 @@ de Software em IA Aplicada (UNIPDS).
 ## Open source / hobby
 
 - Ferramentas de romhacking (LoM Studio, Tile Studio, TIM Studio): https://github.com/rodrigokiller
+- [Yggdex](https://yggdex.com): banco de dados, calculadora e ferramentas de guilda para Ragnarok Origin Classic
 
 ## Contato
 

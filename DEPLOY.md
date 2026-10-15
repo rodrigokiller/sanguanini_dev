@@ -40,7 +40,8 @@ erros/404.html  erros/500.html
   navegador, A4, sem margens/cabeçalhos, "salvar como PDF" → `files/cv.pdf`).
 - **Galeria**: prints reais em `img/shots/` para jhourney (4), conectax (4),
   romvault (6), seniorops (5), gocli (4), lom-studio (7), tile-studio (1),
-  tim-studio (1). Faltam sig/wms/sgcq (placeholders). Para adicionar/remover
+  tim-studio (1), yggdex (4, tirados do site no ar). Faltam sig/wms/sgcq
+  (placeholders) e universatlas (placeholders). Para adicionar/remover
   imagens, edite o atributo `data-shots` do botão `./screenshots` de cada
   card no `index.html` (lista separada por vírgula).
 - **Kit de marca**: pasta `marca/` (SVG, PNG claro/escuro, GIF do boot).
