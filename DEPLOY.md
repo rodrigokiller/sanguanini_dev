@@ -5,8 +5,10 @@ O site é a raiz deste repositório: https://github.com/rodrigokiller/sanguanini
 ## O que subir por FTP (raiz `www/`)
 
 Tudo, **exceto**: os arquivos `.md` (PRODUCT/DESIGN/DEPLOY), a pasta `marca/`
-(kit de marca, só para documentos/propostas) e `OLD_2024/` (nem está no git;
-se ainda existir no seu disco/servidor, apague de lá).
+(kit de marca, só para documentos/propostas), a pasta `_guardado/` (arquivos
+retirados do site, como o logo antigo do SeniorOps, que não podem ser
+publicados) e `OLD_2024/` (nem está no git; se ainda existir no seu
+disco/servidor, apague de lá).
 
 ```
 index.html

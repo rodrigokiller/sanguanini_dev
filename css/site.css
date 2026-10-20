@@ -486,6 +486,7 @@ button.abrir {
   padding-top: 12px; padding-bottom: 12px;
 }
 .rodape .on::before { content: '● '; color: var(--accent); }
+.rodape .rodape-aviso { padding-top: 0; font-size: 10px; }
 
 /* mobile: só o essencial - online à esquerda, © à direita */
 @media (max-width: 640px) {
