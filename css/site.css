@@ -312,13 +312,14 @@ button.abrir {
   background: none; border: 0; padding: 0; cursor: pointer;
 }
 .produto .abrir:hover, .ferramenta .abrir:hover { color: var(--marca); text-decoration: none; }
-.produto.vazio { background: var(--bg); cursor: default; }
-.produto.vazio:hover { background: var(--bg); transform: none; }
-.produto.vazio h3 { color: var(--line-bright); }
-.produto.vazio .prompt-vazio {
+.produto.vazio, .ferramenta.vazio { background: var(--bg); cursor: default; }
+.produto.vazio:hover, .ferramenta.vazio:hover { background: var(--bg); transform: none; }
+.produto.vazio h3, .ferramenta.vazio h3 { color: var(--line-bright); }
+.ferramenta.vazio h3::before { content: none; }
+.produto.vazio .prompt-vazio, .ferramenta.vazio .prompt-vazio {
   font-family: var(--mono); font-size: 12px; color: var(--muted); line-height: 1.8;
 }
-.produto.vazio .caret { width: 6px; height: 12px; margin-left: 4px; }
+.produto.vazio .caret, .ferramenta.vazio .caret { width: 6px; height: 12px; margin-left: 4px; }
 
 /* ------------------------------------------------------------
    Lab - a seção âmbar (romhacking / hobby)
