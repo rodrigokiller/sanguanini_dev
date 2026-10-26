@@ -35,7 +35,7 @@ modo CRT como easter egg), não em piadas no texto principal.
 
 1. **O site é o portfólio.** Cada detalhe (raio zero, réguas de 1px, boot) demonstra o mesmo cuidado dos produtos.
 2. **DNA da casa.** O tema é o do RomVault/Studios - fósforo verde sobre near-black - porque é o que Rodrigo realmente constrói, não um figurino.
-3. **Cada produto com a própria cor.** No portfólio, Jhourney é âmbar, ConectaX azul, RomVault verde, SeniorOps teal, GoCLI roxo - sobre o mesmo terminal neutro.
+3. **Cada produto com a própria cor.** No portfólio, Jhourney é âmbar, ConectaX azul, RomVault verde, DeckOps azul, GoCLI roxo - sobre o mesmo terminal neutro.
 4. **Zero dependências.** HTML/CSS/JS puros, sem build, sem CDN. Editar e subir por FTP.
 5. **Teatro dosado.** Scanlines quase invisíveis e boot de ~2s pulável por padrão; o exagero (glow, scanlines fortes) mora no modo CRT opcional.
 

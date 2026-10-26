@@ -5,10 +5,8 @@ O site é a raiz deste repositório: https://github.com/rodrigokiller/sanguanini
 ## O que subir por FTP (raiz `www/`)
 
 Tudo, **exceto**: os arquivos `.md` (PRODUCT/DESIGN/DEPLOY), a pasta `marca/`
-(kit de marca, só para documentos/propostas), a pasta `_guardado/` (arquivos
-retirados do site, como o logo antigo do SeniorOps, que não podem ser
-publicados) e `OLD_2024/` (nem está no git; se ainda existir no seu
-disco/servidor, apague de lá).
+(kit de marca, só para documentos/propostas) e `OLD_2024/` (nem está no git;
+se ainda existir no seu disco/servidor, apague de lá).
 
 ```
 index.html
@@ -41,7 +39,7 @@ erros/404.html  erros/500.html
 - **Currículo**: edite `files/cv.html` e re-imprima em PDF (Ctrl+P no
   navegador, A4, sem margens/cabeçalhos, "salvar como PDF" → `files/cv.pdf`).
 - **Galeria**: prints reais em `img/shots/` para jhourney (4), conectax (4),
-  romvault (6), seniorops (5), gocli (4), lom-studio (7), tile-studio (1),
+  romvault (6), deckops (1, tirado do site no ar), gocli (4), lom-studio (7), tile-studio (1),
   tim-studio (1), diskplot (2), yggdex (4, tirados do site no ar). Faltam sig/wms/sgcq
   (placeholders) e universatlas (placeholders). Para adicionar/remover
   imagens, edite o atributo `data-shots` do botão `./screenshots` de cada

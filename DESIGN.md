@@ -27,7 +27,7 @@ ambas `pointer-events:none`.
 
 Cores de marca dos produtos (clareadas p/ fundo escuro):
 jhourney `#e08b3c` · conectax `#639ff7` · romvault `#34e2a0` ·
-seniorops `#2ec4a6` · gocli `#a78bfa`.
+deckops `#4f8ef7` · gocli `#a78bfa`.
 
 ## Tipografia
 
