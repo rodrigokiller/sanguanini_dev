@@ -8,8 +8,9 @@
 
 Especialista em Senior ERP (LSP, customizações, SDE), Oracle e SQL Server,
 integrações entre sistemas, PHP, C#/.NET, TypeScript/React e Python.
-Consultoria própria (Sanguanini DEV) desde 2021. Pós-graduando em Engenharia
-de Software em IA Aplicada (UNIPDS).
+Consultoria própria e independente (Sanguanini DEV) desde 2021, sem vínculo
+com a Senior Sistemas. Pós-graduando em Engenharia de Software em IA Aplicada
+(UNIPDS).
 
 ## Produtos próprios em produção
 
